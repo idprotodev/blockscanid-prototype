@@ -1,77 +1,63 @@
-
 # BlockscanID Token (BID)
 
-> 🧪 A functional prototype for identity-token UX exploration in the Blockscan ecosystem.
+> 🧪 A functional prototype for identity-token UX exploration using the ENS domain `blockscanid.eth`.
 
 ---
 
 ## 🔍 Overview
 
-**BlockscanID Token (BID)** is a non-official, experimental ERC-20 token designed to explore user identity mapping, wallet binding, and ENS resolution mechanics within the Blockscan ecosystem.
+**BlockscanID Token (BID)** is an experimental ERC-20 token and identity UX demo built around the ENS name `blockscanid.eth`.  
+It explores wallet-binding, identity resolution, and token-claim interactions for potential use within the Blockscan / Etherscan ecosystem or other on-chain identity systems.
 
-This prototype is intended as a proof-of-concept (PoC) and showcases a basic UI + token + ENS setup that simulates how an identity layer might work on L2 networks powered by Blockscan tools.
-
----
-
-## 💡 Potential Use Cases
-
-1. **Verified Account Linking**  
-   Associate a user's wallet address with a specific ENS-based ID (e.g., `alice.blockscanid.eth`).
-
-2. **On-Chain Attestation Anchor**  
-   Use the token as a mock anchor for zero-knowledge attestation, future credentials, or account recovery.
-
-3. **ENS-Integrated Wallet UI**  
-   Offer wallet-based login & token claim UX that feels intuitive, fast, and verifiable across apps.
-
-4. **Delegation or Session Identity Tokens**  
-   Enable temporary or delegated identities for specific use-cases in dapps that integrate Blockscan or Etherscan APIs.
+This is a complete proof-of-concept (PoC), combining:
+- ERC-20 smart contract (`BlockscanIDToken.sol`)
+- React-based UI with ENS name lookup
+- ENS-based identity resolution (`you.blockscanid.eth`)
+- Token claim simulation
 
 ---
 
-## 🚀 Live Demo
+## 💡 Use Case Highlights
 
-- ENS: [`blockscanid.eth`](https://app.ens.domains/name/blockscanid.eth)
-- Demo UI: [https://blockscanid-ui.netlify.app](https://blockscanid-ui.netlify.app)
-- GitHub: [github.com/your-org/blockscanid-prototype](https://github.com/your-org/blockscanid-prototype)
+1. **Verified Wallet–ENS Linking**  
+   Bind a wallet to an identity like `alice.blockscanid.eth` and simulate ownership confirmation.
 
-> 🛠 ENS `text-record` is configured to point to this GitHub repository.
+2. **On-chain Attestation Anchors**  
+   Use the token as a placeholder for zk attestations, credentials, or delegation structures.
+
+3. **ENS-integrated Login UX**  
+   A lightweight UX flow for login and identity confirmation via ENS and MetaMask.
+
+4. **Session Identity Tokens**  
+   Mock short-term token issuance tied to ENS ID — applicable to delegation, dApp sessions, or voting layers.
+
+---
+
+## 🧪 Live Demo & Identity Domain
+
+- 🔗 ENS: [`blockscanid.eth`](https://app.ens.domains/name/blockscanid.eth)
+- 💻 Demo UI: [https://blockscanid-ui.netlify.app](https://blockscanid-ui.netlify.app)
+- 🧬 GitHub: [github.com/your-org/blockscanid-prototype](https://github.com/your-org/blockscanid-prototype)
+
+> ✅ This prototype is fully tied to the ENS domain `blockscanid.eth`.  
+> Ownership of this ENS name is essential to fully replicate or deploy the same UX flow.  
+> The ENS text records include contact, GitHub, and demo links for verification.
 
 ---
 
 ## 🛠 Tech Stack
 
-| Layer         | Tech                |
-|---------------|---------------------|
-| Smart Contract | ERC-20 (OpenZeppelin) |
+| Layer         | Tech                     |
+|---------------|--------------------------|
+| Smart Contract | Solidity (ERC-20, OpenZeppelin) |
 | Frontend       | React + TailwindCSS + Ethers.js |
-| Hosting        | Netlify (ENS subdomain optional) |
-| ENS Support    | Reverse resolution + Record mapping |
+| Hosting        | Netlify (connected via ENS) |
+| ENS Support    | Forward + Reverse Resolution |
 
 ---
 
-## 📦 Quick Start (Dev)
+## ⚙️ Local Development
 
 ```bash
-cd ui
 npm install
 npm run dev
-```
-
-Contract deploy via Remix or Hardhat (`contracts/BlockscanIDToken.sol`).
-
----
-
-## 📩 Contact
-
-If you are part of the **Blockscan**, **Etherscan**, or affiliated identity protocols team and wish to discuss potential acquisition or collaborative usage of `blockscanid.eth`, feel free to reach out via the contact listed in the ENS record.
-
-Alternatively, GitHub issues or pull requests are welcome for iteration.
-
----
-
-## ⚠️ Disclaimer
-
-This project is not affiliated with Blockscan or any related companies. It is provided as an open exploration artifact under MIT license.
-
----
