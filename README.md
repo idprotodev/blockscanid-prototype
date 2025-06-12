@@ -32,7 +32,7 @@ This prototype is intended as a proof-of-concept (PoC) and showcases a basic UI 
 
 - ENS: [`blockscanid.eth`](https://app.ens.domains/name/blockscanid.eth)
 - Demo UI: [https://blockscanid-ui.netlify.app](https://blockscanid-ui.netlify.app)
-- GitHub: [github.com/your-org/blockscanid-prototype](https://github.com/your-org/blockscanid-prototype)
+- GitHub: [github.com/idprotodev/blockscanid-prototype](https://github.com/idprotodev/blockscanid-prototype)
 
 > 🛠 ENS `text-record` is configured to point to this GitHub repository.
 
